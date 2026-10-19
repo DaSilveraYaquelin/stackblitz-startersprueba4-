@@ -1,0 +1,95 @@
+
+/* Estilos generales para todos los nodos */
+
+body {
+  background-color:#2E8B57 ;
+  color:#FFFAF0 ;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Títulos principales */
+
+h1 {
+  font-family: "Alfa Slab One", serif;
+  color: #000000;
+  font-size: 42px;
+}
+
+/* Subtítulos */
+
+h2 {
+  font-family: "Alfa Slab One", serif;
+  color: #000000 ;
+  font-size: 30px;
+}
+
+/* Párrafos */
+
+p {
+  font-family: "Bebas Neue", sans-serif;
+  color:#FFFAF0;
+  font-size: 22px;
+}
+
+/* Enlaces entre nodos */
+
+a {
+  font-family: "Bebas Neue", sans-serif;
+  color:#FFFAF0 ;
+  font-size: 22px;
+}
+
+/* Imágenes */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenido multimedia */
+
+iframe,
+video,
+audio {
+  max-width: 100%;
+}
+
+/* Imagen de fondo del nodo 2 */
+
+body.nodo-casa {
+  background-image: url("img/casa-bosque.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.imagen-velador {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+```css
+/* Fondo exclusivo para el inicio de la historia */
+body.inicio {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+}
+
+body.inicio::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("img/fondo-andi.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+}
+```
